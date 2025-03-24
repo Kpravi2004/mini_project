@@ -1,0 +1,75 @@
+/* 3D Background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    perspective: 1000px;
+}
+
+/* 3D Form */
+.register-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.5);
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease-in-out;
+}
+
+.register-container:hover {
+    transform: rotateX(5deg) rotateY(5deg);
+}
+
+/* Heading */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* 3D Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: linear-gradient(135deg, #283c86, #45a247);
+    color: white;
+    box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.2);
+}
+
+/* Animated Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Button Hover */
+button:hover {
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Login Link */
+p {
+    margin-top: 15px;
+}
+
+a {
+    color: #ff416c;
+    text-decoration: none;
+}
