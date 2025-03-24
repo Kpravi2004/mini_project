@@ -1,0 +1,84 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background: Switch between light & dark themes */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Light Theme */
+    color: #333;
+    transition: background 0.5s;
+}
+
+/* 3D Glass Effect */
+.register-container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    width: 320px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease-in-out, background 0.5s;
+}
+
+.register-container:hover {
+    transform: rotateX(5deg) rotateY(5deg);
+}
+
+/* Heading */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Input Fields (Light Theme & 3D Effect) */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: linear-gradient(135deg, #283c86, #45a247);
+    color: white;
+    box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.2);
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Button Hover Effect */
+button:hover {
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Login Link */
+p {
+    margin-top: 15px;
+}
+
+a {
+    color: #ff416c;
+    text-decoration: none;
+}
